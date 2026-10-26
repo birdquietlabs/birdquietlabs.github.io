@@ -1,164 +1,274 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de privacidad · BirdQuiet</title>
-<meta name="description" content="Política de privacidad de BirdQuiet, la app de concentración de BirdQuiet Labs.">
-<meta name="robots" content="index, follow">
-<style>
-  :root {
-    --bg: #f8f4ec;
-    --surface: #fffdf8;
-    --text: #2b2a26;
-    --muted: #6b675e;
-    --line: #e4ddcf;
-    --accent: #3f6b4f;
-    --accent-soft: #e6eee6;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #191b18;
-      --surface: #21241f;
-      --text: #e8e6df;
-      --muted: #a8a59b;
-      --line: #34382f;
-      --accent: #8fbf9a;
-      --accent-soft: #263027;
-    }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
-  header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
-  .brand {
-    display: inline-flex; align-items: center; gap: 10px;
-    font-weight: 600; letter-spacing: .02em; color: var(--accent);
-    font-size: 15px; text-transform: uppercase;
-  }
-  .brand svg { width: 22px; height: 22px; }
-  h1, h2 {
-    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
-    font-weight: 600; line-height: 1.25;
-  }
-  h1 { font-size: clamp(30px, 6vw, 40px); margin: 14px 0 10px; }
-  .meta { color: var(--muted); font-size: 15px; margin: 0; }
-  nav {
-    margin: 32px 0 8px; padding: 18px 22px;
-    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
-  }
-  nav p { margin: 0 0 8px; font-weight: 600; font-size: 15px; color: var(--muted); }
-  nav ol { margin: 0; padding-left: 20px; }
-  nav li { margin: 3px 0; }
-  a { color: var(--accent); text-underline-offset: 3px; }
-  a:hover { text-decoration-thickness: 2px; }
-  main section { padding-top: 28px; }
-  h2 { font-size: 23px; margin: 0 0 10px; }
-  p { margin: 0 0 14px; }
-  .note {
-    background: var(--accent-soft); border-radius: 10px;
-    padding: 14px 18px; margin: 4px 0 14px;
-  }
-  footer {
-    margin-top: 48px; padding: 24px 0 48px;
-    border-top: 1px solid var(--line); color: var(--muted); font-size: 14px;
-  }
-  @media (max-width: 480px) {
-    body { font-size: 16px; }
-    header { padding-top: 40px; }
-    nav { padding: 16px 18px; }
-  }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BirdQuiet · A focus app with a camera trap</title>
+<meta name="description" content="BirdQuiet is an offline focus app for Android. Put your phone down and a virtual camera trap records Mediterranean and Amazon wildlife for your field journal.">
+<meta name="theme-color" content="#15291f">
+<meta property="og:title" content="BirdQuiet">
+<meta property="og:description" content="Put your phone down. A camera trap records wildlife while you focus.">
+<meta property="og:image" content="assets/img/med.webp">
+<link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <span class="brand">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/>
-      </svg>
-      BirdQuiet
-    </span>
-    <h1>Política de privacidad</h1>
-    <p class="meta">Última actualización: 26 de octubre de 2026</p>
-  </header>
+<a class="skip" href="#how" data-i18n="skip">Skip to how it works</a>
 
-  <nav aria-label="Índice">
-    <p>Contenido</p>
-    <ol>
-      <li><a href="#responsable">Responsable del tratamiento y contacto</a></li>
-      <li><a href="#datos">Datos en tu dispositivo</a></li>
-      <li><a href="#concentracion">Concentración total (opcional)</a></li>
-      <li><a href="#notificaciones">Notificaciones y permisos</a></li>
-      <li><a href="#conservacion">Conservación, borrado y copias de seguridad</a></li>
-      <li><a href="#enlaces">Enlaces externos y asistencia</a></li>
-      <li><a href="#derechos">Tus opciones y derechos</a></li>
-      <li><a href="#cambios">Cambios</a></li>
-    </ol>
-  </nav>
+<div class="split" id="top">
+  <!-- The fixed half: camera 01. It never moves; only what is in it changes. -->
+  <div class="stage" data-state="film" aria-live="off">
+    <div class="stage-frame">
 
-  <main>
-    <section id="responsable">
-      <h2>Responsable del tratamiento y contacto</h2>
-      <p>BirdQuiet es una app publicada por BirdQuiet Labs, nombre comercial que utiliza O. Belyaev desde España. Si tienes dudas sobre privacidad o necesitas ayuda, escribe a <a href="mailto:birdquietlabs@gmail.com">birdquietlabs@gmail.com</a>.</p>
+      <div class="layer layer-film" data-layer="film">
+        <video class="cover" src="assets/clips/intro.mp4" poster="assets/clips/intro.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+      </div>
+
+      <div class="layer layer-set" data-layer="set">
+        <img class="cover" src="assets/img/med.webp" alt="" width="1600" height="900" loading="lazy" style="object-position:62% 50%">
+        <div class="ui ui-card ui-set" data-ui aria-hidden="true">
+          <div class="ui-head">
+            <img src="assets/img/trap.webp" alt="" width="860" height="530" loading="lazy">
+            <div><p class="ui-title" data-i18n="ui.coast">Mediterranean coast</p><p class="ui-sub" data-i18n="ui.cam">Camera 01</p></div>
+          </div>
+          <p class="ui-label" data-i18n="ui.settime">Set your time</p>
+          <div class="ui-chips">
+            <span>1 min</span><span>5 min</span><span>15 min</span><span>30 min</span><span class="on">60 min</span>
+          </div>
+          <div class="ui-fields">
+            <label><span data-i18n="ui.hours">Hours</span><b>1</b></label>
+            <label><span data-i18n="ui.minutes">Minutes</span><b>0</b></label>
+          </div>
+          <div class="ui-tags">
+            <span class="on" data-i18n="tag.study">Studying</span><span data-i18n="tag.read">Reading</span><span data-i18n="tag.work">Working</span>
+          </div>
+          <span class="ui-button" data-i18n="ui.setbtn">Set camera trap</span>
+        </div>
+      </div>
+
+      <div class="layer layer-focus" data-layer="focus">
+        <div class="ui ui-focus" data-ui aria-hidden="true">
+          <img src="assets/img/trap.webp" alt="" width="860" height="530" loading="lazy">
+          <p class="ui-sub" data-i18n="ui.recording">Your camera trap is recording</p>
+          <p class="ui-clock">47:12</p>
+          <div class="ui-track"><span style="width:21%"></span></div>
+          <p class="ui-sub"><span data-i18n="ui.coast">Mediterranean coast</span> · <span data-i18n="tag.study">Studying</span></p>
+        </div>
+      </div>
+
+      <div class="layer layer-back" data-layer="back">
+        <img class="cover" src="assets/img/med.webp" alt="" width="1600" height="900" loading="lazy" style="object-position:30% 50%">
+        <div class="ui ui-card ui-back" data-ui aria-hidden="true">
+          <div class="ui-head">
+            <img src="assets/img/med.webp" alt="" width="1600" height="900" loading="lazy">
+            <div><p class="ui-title" data-i18n="ui.coast">Mediterranean coast</p><p class="ui-sub" data-i18n="ui.cam">Camera 01</p></div>
+          </div>
+          <p class="ui-big" data-i18n="ui.quiet">1:00:00 of quiet</p>
+          <p class="ui-sub"><span data-i18n="ui.sightings">2 sightings</span> · <span data-i18n="ui.coins">+60 coins</span></p>
+          <p class="ui-label" data-i18n="ui.review">Let’s review the sightings.</p>
+          <div class="ui-file"><b>CAM01_001.MP4</b><span>14:53 · <span data-i18n="ui.open">Open recording</span></span></div>
+          <div class="ui-file"><b>CAM01_002.MP4</b><span>15:21 · <span data-i18n="ui.open">Open recording</span></span></div>
+        </div>
+      </div>
+
+      <div class="layer layer-quiz" data-layer="quiz">
+        <img class="cover" src="assets/img/med.webp" alt="" width="1600" height="900" loading="lazy">
+        <figure class="ui ui-player" data-ui>
+          <figcaption class="ui-player-head"><b id="rec-file">CAM01_003.MP4</b><span id="rec-time">16:08</span></figcaption>
+          <div class="ui-video">
+            <video id="rec-video" muted loop playsinline preload="none" poster="assets/clips/fox.jpg" aria-label="Camera trap recording"></video>
+            <button class="ui-play" type="button" hidden data-i18n="quiz.play">Play recording</button>
+          </div>
+          <p class="ui-question" data-i18n="quiz.question">Which animal did the camera capture?</p>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col">
+    <header class="hero" data-step="film">
+      <nav class="nav" aria-label="Main">
+        <a class="nav-logo" href="#top" aria-label="BirdQuiet"><img src="assets/img/logo.webp" alt="" width="512" height="512"></a>
+        <details class="menu">
+          <summary data-i18n="nav.menu">Menu</summary>
+          <ul>
+            <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+            <li><a href="#journal" data-i18n="nav.journal">Journal</a></li>
+            <li><a href="#habitats" data-i18n="nav.habitats">Habitats</a></li>
+            <li><a href="#expeditions" data-i18n="nav.expeditions">Expeditions</a></li>
+          </ul>
+        </details>
+        <ul class="nav-links">
+          <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+          <li><a href="#journal" data-i18n="nav.journal">Journal</a></li>
+          <li><a href="#habitats" data-i18n="nav.habitats">Habitats</a></li>
+          <li><a href="#expeditions" data-i18n="nav.expeditions">Expeditions</a></li>
+        </ul>
+        <button class="lang" type="button" data-lang-toggle lang="es">Español</button>
+      </nav>
+      <p class="hero-line" data-i18n="hero.line">An app to cut down your phone use and learn about nature.</p>
+      <h1 class="wordmark" aria-label="BirdQuiet"><span class="fit">BirdQuiet</span></h1>
+    </header>
+
+    <section class="how" id="how" aria-labelledby="how-h">
+      <h2 id="how-h" data-i18n="how.h">How it works</h2>
+      <ol class="steps">
+        <li class="step" data-step="set">
+          <div class="step-figure" data-figure="set" aria-hidden="true"></div>
+          <p class="step-say" data-i18n="how.1">First choose a habitat and set the trap.</p>
+          <p data-i18n="how.1b">Pick the Mediterranean coast or the Amazon rainforest, how long you want to stay off your phone and what you will be doing: studying, reading, working…</p>
+        </li>
+        <li class="step" data-step="focus">
+          <div class="step-figure" data-figure="focus" aria-hidden="true"></div>
+          <p class="step-say" data-i18n="how.2">Then put the phone down.</p>
+          <p data-i18n="how.2b">The camera trap will be ready. Leave your phone alone and your chances of finding spectacular species go up!</p>
+        </li>
+        <li class="step" data-step="back">
+          <div class="step-figure" data-figure="back" aria-hidden="true"></div>
+          <p class="step-say" data-i18n="how.3">Come back to the recordings.</p>
+          <p data-i18n="how.3b">When you finish, go back to the camera trap and check whether any animals were sighted.</p>
+        </li>
+      </ol>
     </section>
 
-    <section id="datos">
-      <h2>Datos en tu dispositivo</h2>
-      <p>BirdQuiet guarda en el almacenamiento local de la app el cuaderno, las notas, los descubrimientos, el historial de sesiones, las etiquetas, las estadísticas, las monedas, los vehículos, las insignias y tus preferencias. No necesitas crear una cuenta.</p>
-      <p class="note">La versión publicada no incluye publicidad, servicios de análisis ni ningún servidor propio que reciba estos datos. No los vendemos ni los compartimos con fines publicitarios.</p>
+    <section class="quiz" id="try" data-step="quiz" aria-labelledby="quiz-h">
+      <h2 id="quiz-h" data-i18n="quiz.h">Who walked past?</h2>
+      <p class="quiz-lead" data-i18n="quiz.lead">This is a recording from the app. Name the animal, the way you would after a session.</p>
+      <div class="quiz-options" role="group" aria-labelledby="quiz-h">
+        <button type="button" class="option" data-option="0">Red fox</button>
+        <button type="button" class="option" data-option="1">Common genet</button>
+        <button type="button" class="option" data-option="2">Iberian lynx</button>
+      </div>
+      <div class="quiz-slot" data-quiz-slot></div>
+      <p class="quiz-result" id="quiz-result" role="status" aria-live="polite"></p>
+      <div class="quiz-foot">
+        <button type="button" class="button ghost" id="quiz-next" data-i18n="quiz.next">Next recording</button>
+        <p class="quiz-count" id="quiz-count">0 of 2 identified</p>
+      </div>
+      <noscript><p>The recording shows a red fox crossing the path.</p></noscript>
     </section>
-
-    <section id="concentracion">
-      <h2>Concentración total (opcional)</h2>
-      <p>La concentración total es opcional. Si la activas y concedes el permiso de acceso a datos de uso de Android, BirdQuiet consulta, incluso en segundo plano, los eventos de pantalla y de bloqueo y qué apps estaban abiertas durante la sesión. Con esta información calcula el tiempo de concentración y ajusta el estrés del hábitat y las probabilidades de avistamiento del juego.</p>
-      <p>Todo el procesamiento se hace en tu móvil. La versión publicada no envía estos eventos ni tu cuaderno a BirdQuiet Labs, a anunciantes ni a servicios de análisis. No lee el contenido de otras apps, tus mensajes ni tu historial de navegación, y no accede a la cámara, el micrófono ni la ubicación. Android puede facilitar eventos anteriores al inicio de la sesión para reconstruir el estado inicial, pero solo cuenta para la puntuación el tiempo de la sesión.</p>
-      <p>Puedes usar el modo básico sin este permiso; ese modo cuenta el tiempo que pasas en la pantalla de concentración o fuera de BirdQuiet. Para que deje de comprobarse el uso del móvil, elige el modo básico o retira el acceso a datos de uso en los ajustes de Android. A continuación, si aún no lo has activado, Android te dará la opción de conceder este acceso.</p>
-    </section>
-
-    <section id="notificaciones">
-      <h2>Notificaciones y permisos</h2>
-      <p>Las notificaciones y el widget, ambos opcionales, muestran el tiempo, la imagen del hábitat o del vehículo y el final de la sesión. Cualquiera que vea tu pantalla de bloqueo podrá ver esta información; cómo se muestra depende de los ajustes de Android.</p>
-      <p>BirdQuiet no usa tu ubicación, cámara, micrófono, contactos ni el contenido de tus mensajes. La concentración total no bloquea otras apps ni te impide usar el móvil en caso de emergencia.</p>
-    </section>
-
-    <section id="conservacion">
-      <h2>Conservación, borrado y copias de seguridad</h2>
-      <p>Tu progreso se guarda en el móvil hasta que lo borres o desinstales la app. En Ajustes puedes borrar el cuaderno o restablecer BirdQuiet; son acciones independientes y cada una pide doble confirmación. Al restablecer se borran el progreso y las preferencias locales y se retira tu consentimiento para el seguimiento del uso dentro de BirdQuiet. Los permisos de Android se cambian en los ajustes del sistema.</p>
-      <p>Si desinstalas la app o borras su almacenamiento, puedes perder tu progreso. BirdQuiet está configurada para quedar excluida de las copias de seguridad automáticas de Android en la nube y de la transferencia entre dispositivos compatibles, y no ofrece recuperación desde la nube. Este comportamiento puede variar según el fabricante del móvil.</p>
-    </section>
-
-    <section id="enlaces">
-      <h2>Enlaces externos y asistencia</h2>
-      <p>Los enlaces de referencia se abren en tu navegador y llevan a sitios externos con sus propias políticas de privacidad.</p>
-      <p>Si contactas con asistencia, recibiremos, a través de tu proveedor de correo, tu dirección y la información que decidas incluir. Te recomendamos no enviar notas privadas ni informes de uso de otras apps. Usamos estos mensajes solo para responder a tu consulta; la base legal es nuestro interés legítimo en prestarte asistencia. Los conservamos solo el tiempo necesario para ello o mientras lo exija la ley, y puedes pedirnos que los eliminemos.</p>
-      <p>Google Play y Android pueden tratar sus propios datos de la tienda o de diagnóstico conforme a sus políticas; son servicios independientes del almacenamiento local de BirdQuiet.</p>
-    </section>
-
-    <section id="derechos">
-      <h2>Tus opciones y derechos</h2>
-      <p>Puedes usar el modo básico, cambiar los permisos, editar notas y borrar tu progreso local. BirdQuiet Labs no puede recuperar a distancia tu cuaderno ni tus eventos de uso.</p>
-      <p>En cuanto a los datos que nos envíes directamente, puedes <a href="mailto:birdquietlabs@gmail.com">contactar con asistencia</a> para ejercer tus derechos de acceso, rectificación, supresión y demás que te correspondan. También puedes presentar una reclamación ante la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a> o ante la autoridad de control competente.</p>
-      <p>BirdQuiet está pensada para adolescentes y adultos; no es un tratamiento clínico ni una herramienta de control parental.</p>
-    </section>
-
-    <section id="cambios">
-      <h2>Cambios</h2>
-      <p>Esta política se refiere a la versión publicada de la app, que guarda los datos en el propio dispositivo. Si en el futuro se añaden cuentas, copias en línea, servicios de análisis, publicidad u otros tratamientos de datos, actualizaremos la política y las opciones correspondientes antes de activar esas funciones.</p>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 BirdQuiet Labs · <a href="mailto:birdquietlabs@gmail.com">birdquietlabs@gmail.com</a>
-  </footer>
+  </div>
 </div>
+
+<section class="journal" id="journal" aria-labelledby="journal-h">
+  <ul class="wall">
+    <li class="tile t-dark tile-head">
+      <h2 id="journal-h"><span class="tile-word">54</span><span class="tile-cap" data-i18n="journal.h">species, and counting</span></h2>
+    </li>
+    <li class="tile t-a tile-num"><span class="tile-word">28</span><span class="tile-cap" data-i18n="journal.med">on the Mediterranean coast</span></li>
+    <li class="tile t-c tile-num"><span class="tile-word">26</span><span class="tile-cap" data-i18n="journal.amz">in the Amazon rainforest</span></li>
+    <li class="tile t-a"><img src="assets/journal/bee-eater.webp" alt="" width="360" height="334" loading="lazy" data-i18n-alt="sp.beeeater"></li>
+    <li class="tile t-b"><img src="assets/journal/iberian-lynx.webp" alt="" width="360" height="312" loading="lazy" data-i18n-alt="sp.lynx"></li>
+    <li class="tile t-c"><img src="assets/journal/ara-macao.webp" alt="" width="243" height="360" loading="lazy" data-i18n-alt="sp.macaw"></li>
+    <li class="tile t-d"><img src="assets/journal/abubilla.webp" alt="" width="351" height="360" loading="lazy" data-i18n-alt="sp.hoopoe"></li>
+    <li class="tile t-c"><img src="assets/journal/panthera-onca.webp" alt="" width="360" height="192" loading="lazy" data-i18n-alt="sp.jaguar"></li>
+    <li class="tile t-b"><img src="assets/journal/euraisan-golden-oriole.webp" alt="" width="360" height="313" loading="lazy" data-i18n-alt="sp.oriole"></li>
+    <li class="tile t-d"><img src="assets/journal/genet.webp" alt="" width="360" height="114" loading="lazy" data-i18n-alt="sp.genet"></li>
+    <li class="tile t-a"><img src="assets/journal/ramphastos-tucanus.webp" alt="" width="360" height="352" loading="lazy" data-i18n-alt="sp.toucan"></li>
+    <li class="tile t-b"><img src="assets/journal/boar.webp" alt="" width="360" height="237" loading="lazy" data-i18n-alt="sp.boar"></li>
+    <li class="tile t-d"><img src="assets/journal/eurasian-jay.webp" alt="" width="360" height="311" loading="lazy" data-i18n-alt="sp.jay"></li>
+    <li class="tile t-c"><img src="assets/journal/opisthocomus-hoazin.webp" alt="" width="259" height="360" loading="lazy" data-i18n-alt="sp.hoatzin"></li>
+    <li class="tile t-a"><img src="assets/journal/european-goldfinch.webp" alt="" width="360" height="310" loading="lazy" data-i18n-alt="sp.goldfinch"></li>
+    <li class="tile t-b"><img src="assets/journal/emerald-tree-boa.webp" alt="" width="360" height="229" loading="lazy" data-i18n-alt="sp.boa"></li>
+  </ul>
+</section>
+
+<section class="habitats" id="habitats" aria-labelledby="hab-h">
+  <h2 id="hab-h" data-i18n="hab.h">Habitats</h2>
+  <ul class="hab-rail">
+    <li class="hab-card">
+      <img src="assets/img/med.webp" alt="Pixel-art Mediterranean coast with cork oaks above the sea" width="1600" height="900" loading="lazy" data-i18n-alt="alt.med">
+      <h3 data-i18n="hab.med.h">Mediterranean coast</h3>
+    </li>
+    <li class="hab-card">
+      <img src="assets/img/amazon.webp" alt="Pixel-art Amazon rainforest clearing beside a river" width="1600" height="900" loading="lazy" data-i18n-alt="alt.amz">
+      <h3 data-i18n="hab.amz.h">Amazon rainforest</h3>
+    </li>
+    <li class="hab-card">
+      <img src="assets/img/patagonia.webp" alt="Pixel-art Patagonian peaks over a lake" width="1600" height="900" loading="lazy" data-i18n-alt="alt.pat">
+      <h3><span data-i18n="hab.pat.h">Patagonia</span> <span class="soon" data-i18n="hab.soon">Coming soon</span></h3>
+    </li>
+  </ul>
+</section>
+
+<section class="inapp" aria-label="Encyclopedia and statistics">
+  <div class="inapp-half">
+    <h2 data-i18n="enc.h">Encyclopedia</h2>
+    <div class="inapp-panel">
+      <div class="ui ui-profile" data-ui aria-hidden="true">
+        <img src="assets/journal/bee-eater.webp" alt="" width="360" height="334" loading="lazy">
+        <div>
+          <p class="ui-title" data-i18n="sp.beeeater">European bee-eater</p>
+          <p class="ui-latin">Merops apiaster · <span data-i18n="enc.lc">Least concern</span></p>
+          <p class="ui-sub" data-i18n="enc.text">A colourful bird that catches flying insects from a perch. It nests in tunnels dug into sandy banks and usually spends winter in Africa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inapp-half">
+    <h2 data-i18n="stats.h">Statistics</h2>
+    <div class="inapp-panel">
+      <div class="ui ui-stats" data-ui aria-hidden="true">
+        <p class="ui-title"><span data-i18n="stats.today">Today</span> · 2 h 15 min</p>
+        <div class="ui-bars">
+          <span style="--h:100%" class="b-study"><i>9</i></span>
+          <span style="--h:0%"><i>10</i></span>
+          <span style="--h:50%" class="b-read"><i>11</i></span>
+          <span style="--h:0%"><i>12</i></span>
+          <span style="--h:0%"><i>13</i></span>
+          <span style="--h:0%"><i>14</i></span>
+          <span style="--h:75%" class="b-work"><i>16</i></span>
+        </div>
+        <p class="ui-sub"><span class="k k-study"></span><span data-i18n="tag.study">Studying</span> 60 min <span class="k k-read"></span><span data-i18n="tag.read">Reading</span> 30 min <span class="k k-work"></span><span data-i18n="tag.work">Working</span> 45 min</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="expeditions" id="expeditions" aria-labelledby="exp-h">
+  <h2 id="exp-h" data-i18n="exp.h">Expeditions</h2>
+  <div class="road" role="img" aria-label="A 4x4 drives along a Mediterranean dirt road" data-i18n-aria="alt.road">
+    <img class="road-bg" src="assets/img/road-med.webp" alt="" width="2172" height="724" loading="lazy">
+    <div class="road-car"><img src="assets/img/car-road.webp" alt="" width="640" height="420" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="faq" id="questions" aria-labelledby="faq-h">
+  <h2 id="faq-h" data-i18n="faq.h">Questions</h2>
+  <div class="answers">
+    <p><b data-i18n="faq.q1">Is the wildlife real?</b> <span data-i18n="faq.a1">No. Encounters are simulated, and the animal animations were made in advance with AI, so details and sizes can be off. The species, their names and their encyclopedia facts are real.</span></p>
+    <p><b data-i18n="faq.q2">Will an animal turn up every session?</b> <span data-i18n="faq.a2">No. As in real nature, some sessions come back empty. Sightings are more likely the longer you stay away from your phone.</span></p>
+    <p><b data-i18n="faq.q3">Does it block my other apps?</b> <span data-i18n="faq.a3">No. BirdQuiet never blocks anything, and you can always use your phone in an emergency. Using other apps simply lowers the chance of a sighting.</span></p>
+    <p><b data-i18n="faq.q4">How does it know I left the phone alone?</b> <span data-i18n="faq.a4">Basic mode counts time on the focus screen or away from BirdQuiet. Optional full focus uses Android’s usage access, with your permission, to see when the screen was locked and which apps were open. That stays on your phone.</span></p>
+    <p><b data-i18n="faq.q5">Are there ads or purchases?</b> <span data-i18n="faq.a5">For now, there are no ads, no accounts and no coins for sale. Coins come only from time spent off your phone.</span></p>
+    <p><b data-i18n="faq.q6">Does it need an internet connection?</b> <span data-i18n="faq.a6">No. The main features work offline. Source links in the encyclopedia open in your browser.</span></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-art"><img src="assets/img/footer-bee-eater.webp" alt="The BirdQuiet bee-eater, from the field journal" width="786" height="729" decoding="async"></div>
+  <div class="footer-menu">
+    <p class="footer-mark"><img src="assets/img/logo.webp" alt="" width="512" height="512" loading="lazy"> BirdQuiet</p>
+    <ul>
+      <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+      <li><a href="#journal" data-i18n="nav.journal">Journal</a></li>
+      <li><a href="#habitats" data-i18n="nav.habitats">Habitats</a></li>
+      <li><a href="#expeditions" data-i18n="nav.expeditions">Expeditions</a></li>
+      <li><a href="#questions" data-i18n="nav.questions">Questions</a></li>
+    </ul>
+    <div class="footer-blocks">
+      <p><span data-i18n="foot.contact">Support and press</span><br><a href="mailto:birdquietlabs@gmail.com">birdquietlabs@gmail.com</a></p>
+      <p><span data-i18n="foot.legal">Legal</span><br><a href="privacidad.html" data-i18n="foot.privacy">Privacy policy</a></p>
+    </div>
+    <p class="footer-legal" data-i18n="foot.line">© 2026 BirdQuiet Labs, Spain. Wildlife animations and artwork are BirdQuiet’s own and partly AI-generated.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · BirdQuiet</title>
+<meta name="description" content="Política de privacidad de BirdQuiet, la app de concentración de BirdQuiet Labs.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="64x64">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<style>
+  :root {
+    --bg: #f4f5ef;
+    --surface: #fbfaf6;
+    --text: #243d31;
+    --muted: #4e6249;
+    --line: #dfe4d5;
+    --accent: #355d43;
+    --accent-soft: #e6eadc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15291f;
+      --surface: #1c3226;
+      --text: #e8e6df;
+      --muted: #a8a59b;
+      --line: #34382f;
+      --accent: #8fbf9a;
+      --accent-soft: #263027;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-weight: 600; letter-spacing: .02em; color: var(--accent);
+    font-size: 15px; text-transform: uppercase;
+  }
+  .brand img { width: 28px; height: 28px; border-radius: 7px; }
+  .brand { text-decoration: none; }
+  h1, h2 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-weight: 600; line-height: 1.25;
+  }
+  h1 { font-size: clamp(30px, 6vw, 40px); margin: 14px 0 10px; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+  nav {
+    margin: 32px 0 8px; padding: 18px 22px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  }
+  nav p { margin: 0 0 8px; font-weight: 600; font-size: 15px; color: var(--muted); }
+  nav ol { margin: 0; padding-left: 20px; }
+  nav li { margin: 3px 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  main section { padding-top: 28px; }
+  h2 { font-size: 23px; margin: 0 0 10px; }
+  p { margin: 0 0 14px; }
+  .note {
+    background: var(--accent-soft); border-radius: 10px;
+    padding: 14px 18px; margin: 4px 0 14px;
+  }
+  footer {
+    margin-top: 48px; padding: 24px 0 48px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    header { padding-top: 40px; }
+    nav { padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="assets/img/logo.webp" alt="" width="28" height="28"> BirdQuiet</a>
+    <h1>Política de privacidad</h1>
+    <p class="meta">Última actualización: 26 de octubre de 2026</p>
+  </header>
+
+  <nav aria-label="Índice">
+    <p>Contenido</p>
+    <ol>
+      <li><a href="#responsable">Responsable del tratamiento y contacto</a></li>
+      <li><a href="#datos">Datos en tu dispositivo</a></li>
+      <li><a href="#concentracion">Concentración total (opcional)</a></li>
+      <li><a href="#notificaciones">Notificaciones y permisos</a></li>
+      <li><a href="#conservacion">Conservación, borrado y copias de seguridad</a></li>
+      <li><a href="#enlaces">Enlaces externos y asistencia</a></li>
+      <li><a href="#derechos">Tus opciones y derechos</a></li>
+      <li><a href="#cambios">Cambios</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section id="responsable">
+      <h2>Responsable del tratamiento y contacto</h2>
+      <p>BirdQuiet es una app publicada por BirdQuiet Labs, nombre comercial que utiliza O. Belyaev desde España. Si tienes dudas sobre privacidad o necesitas ayuda, escribe a <a href="mailto:birdquietlabs@gmail.com">birdquietlabs@gmail.com</a>.</p>
+    </section>
+
+    <section id="datos">
+      <h2>Datos en tu dispositivo</h2>
+      <p>BirdQuiet guarda en el almacenamiento local de la app el cuaderno, las notas, los descubrimientos, el historial de sesiones, las etiquetas, las estadísticas, las monedas, los vehículos, las insignias y tus preferencias. No necesitas crear una cuenta.</p>
+      <p class="note">La versión publicada no incluye publicidad, servicios de análisis ni ningún servidor propio que reciba estos datos. No los vendemos ni los compartimos con fines publicitarios.</p>
+    </section>
+
+    <section id="concentracion">
+      <h2>Concentración total (opcional)</h2>
+      <p>La concentración total es opcional. Si la activas y concedes el permiso de acceso a datos de uso de Android, BirdQuiet consulta, incluso en segundo plano, los eventos de pantalla y de bloqueo y qué apps estaban abiertas durante la sesión. Con esta información calcula el tiempo de concentración y ajusta el estrés del hábitat y las probabilidades de avistamiento del juego.</p>
+      <p>Todo el procesamiento se hace en tu móvil. La versión publicada no envía estos eventos ni tu cuaderno a BirdQuiet Labs, a anunciantes ni a servicios de análisis. No lee el contenido de otras apps, tus mensajes ni tu historial de navegación, y no accede a la cámara, el micrófono ni la ubicación. Android puede facilitar eventos anteriores al inicio de la sesión para reconstruir el estado inicial, pero solo cuenta para la puntuación el tiempo de la sesión.</p>
+      <p>Puedes usar el modo básico sin este permiso; ese modo cuenta el tiempo que pasas en la pantalla de concentración o fuera de BirdQuiet. Para que deje de comprobarse el uso del móvil, elige el modo básico o retira el acceso a datos de uso en los ajustes de Android. A continuación, si aún no lo has activado, Android te dará la opción de conceder este acceso.</p>
+    </section>
+
+    <section id="notificaciones">
+      <h2>Notificaciones y permisos</h2>
+      <p>Las notificaciones y el widget, ambos opcionales, muestran el tiempo, la imagen del hábitat o del vehículo y el final de la sesión. Cualquiera que vea tu pantalla de bloqueo podrá ver esta información; cómo se muestra depende de los ajustes de Android.</p>
+      <p>BirdQuiet no usa tu ubicación, cámara, micrófono, contactos ni el contenido de tus mensajes. La concentración total no bloquea otras apps ni te impide usar el móvil en caso de emergencia.</p>
+    </section>
+
+    <section id="conservacion">
+      <h2>Conservación, borrado y copias de seguridad</h2>
+      <p>Tu progreso se guarda en el móvil hasta que lo borres o desinstales la app. En Ajustes puedes borrar el cuaderno o restablecer BirdQuiet; son acciones independientes y cada una pide doble confirmación. Al restablecer se borran el progreso y las preferencias locales y se retira tu consentimiento para el seguimiento del uso dentro de BirdQuiet. Los permisos de Android se cambian en los ajustes del sistema.</p>
+      <p>Si desinstalas la app o borras su almacenamiento, puedes perder tu progreso. BirdQuiet está configurada para quedar excluida de las copias de seguridad automáticas de Android en la nube y de la transferencia entre dispositivos compatibles, y no ofrece recuperación desde la nube. Este comportamiento puede variar según el fabricante del móvil.</p>
+    </section>
+
+    <section id="enlaces">
+      <h2>Enlaces externos y asistencia</h2>
+      <p>Los enlaces de referencia se abren en tu navegador y llevan a sitios externos con sus propias políticas de privacidad.</p>
+      <p>Si contactas con asistencia, recibiremos, a través de tu proveedor de correo, tu dirección y la información que decidas incluir. Te recomendamos no enviar notas privadas ni informes de uso de otras apps. Usamos estos mensajes solo para responder a tu consulta; la base legal es nuestro interés legítimo en prestarte asistencia. Los conservamos solo el tiempo necesario para ello o mientras lo exija la ley, y puedes pedirnos que los eliminemos.</p>
+      <p>Google Play y Android pueden tratar sus propios datos de la tienda o de diagnóstico conforme a sus políticas; son servicios independientes del almacenamiento local de BirdQuiet.</p>
+    </section>
+
+    <section id="derechos">
+      <h2>Tus opciones y derechos</h2>
+      <p>Puedes usar el modo básico, cambiar los permisos, editar notas y borrar tu progreso local. BirdQuiet Labs no puede recuperar a distancia tu cuaderno ni tus eventos de uso.</p>
+      <p>En cuanto a los datos que nos envíes directamente, puedes <a href="mailto:birdquietlabs@gmail.com">contactar con asistencia</a> para ejercer tus derechos de acceso, rectificación, supresión y demás que te correspondan. También puedes presentar una reclamación ante la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a> o ante la autoridad de control competente.</p>
+      <p>BirdQuiet está pensada para adolescentes y adultos; no es un tratamiento clínico ni una herramienta de control parental.</p>
+    </section>
+
+    <section id="cambios">
+      <h2>Cambios</h2>
+      <p>Esta política se refiere a la versión publicada de la app, que guarda los datos en el propio dispositivo. Si en el futuro se añaden cuentas, copias en línea, servicios de análisis, publicidad u otros tratamientos de datos, actualizaremos la política y las opciones correspondientes antes de activar esas funciones.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="./">BirdQuiet</a> · © 2026 BirdQuiet Labs · <a href="mailto:birdquietlabs@gmail.com">birdquietlabs@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
