@@ -100,6 +100,7 @@
     $$('[data-i18n-html]').forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     $$('[data-i18n-alt]').forEach((el) => { el.alt = t(el.dataset.i18nAlt); });
     $$('[data-i18n-aria]').forEach((el) => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
+    $$('[data-privacy]').forEach((a) => { a.href = lang === 'es' ? 'privacidad.html' : 'privacy.html'; });
     const toggle = $('[data-lang-toggle]');
     if (toggle) { toggle.textContent = lang === 'es' ? 'English' : 'Español'; toggle.lang = lang === 'es' ? 'en' : 'es'; }
     document.title = lang === 'es' ? 'BirdQuiet · Una app de concentración con cámara de fototrampeo' : 'BirdQuiet · A focus app with a camera trap';
