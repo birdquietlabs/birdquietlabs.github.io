@@ -12,10 +12,8 @@
     'hero.line': 'Una app para reducir el uso del móvil y aprender sobre la naturaleza.',
     'ui.coast': 'Costa mediterránea', 'ui.cam': 'Cámara 01', 'ui.settime': 'Selecciona el tiempo', 'ui.hours': 'Horas', 'ui.minutes': 'Minutos',
     'ui.setbtn': 'Colocar cámara', 'ui.recording': 'Tu cámara de fototrampeo está grabando',
-    'ui.unlock': 'Si desbloqueas el móvil, bajan las probabilidades de ver fauna.',
     'ui.quiet': '1:00:00 de calma', 'ui.sightings': '2 avistamientos', 'ui.coins': '+60 monedas', 'ui.review': 'Revisemos los avistamientos.', 'ui.open': 'Abrir grabación',
-    'ui.journal': 'Cuaderno de campo', 'ui.count': '13 de 28 encontrados', 'ui.identified': 'Identificado el 26 oct · CAM01_001.MP4',
-    'ui.note': 'Cruzó el camino bajo el olivo viejo, justo antes de la puesta de sol.',
+
     'tag.study': 'Estudiar', 'tag.read': 'Leer', 'tag.work': 'Trabajar',
     'how.h': 'Cómo funciona',
     'how.1': 'Primero elige un hábitat y coloca la cámara.',
@@ -24,8 +22,7 @@
     'how.2b': 'La cámara de fototrampeo estará lista. ¡No uses el móvil y tus probabilidades de encontrar especies espectaculares aumentarán!',
     'how.3': 'Vuelve y revisa las grabaciones.',
     'how.3b': 'Cuando termines, vuelve a la cámara de fototrampeo y revisa si hubo avistamientos de animales.',
-    'how.4': 'Identifica lo que has visto y guárdalo.',
-    'how.4b': 'Elige el animal entre tres nombres. Pasa a tu cuaderno de campo, donde puedes añadir tus propias notas.',
+
     'quiz.h': '¿Quién ha pasado?',
     'quiz.lead': 'Esta es una grabación de la app. Identifica el animal, como harías después de una sesión.',
     'quiz.next': 'Siguiente grabación', 'quiz.play': 'Ver grabación', 'quiz.question': '¿Qué animal ha captado la cámara?',
@@ -40,37 +37,29 @@
     'hab.h': 'Hábitats', 'hab.soon': 'Próximamente',
     'alt.med': 'Costa mediterránea en pixel art, con alcornoques sobre el mar', 'alt.amz': 'Claro de la selva amazónica en pixel art, junto a un río',
     'alt.pat': 'Picos de la Patagonia sobre un lago, en pixel art', 'alt.road': 'Un todoterreno avanza por un camino de tierra mediterráneo',
-    'hab.p': 'Cada hábitat tiene su propia cámara, su luz y sus animales. Tu progreso, tus insignias y tu cuaderno se guardan por separado en cada uno.',
-    'hab.med.h': 'Costa mediterránea', 'hab.med.p': 'Alcornoques, lavanda y el mar al fondo. 18 aves y 10 mamíferos, de la abubilla al lince ibérico.', 'hab.med.s': 'Cámaras de fototrampeo y expediciones.',
-    'hab.amz.h': 'Selva amazónica', 'hab.amz.p': 'Un claro junto al río. 19 aves, 4 mamíferos y 3 reptiles, entre ellos el hoacín y la anaconda verde.', 'hab.amz.s': 'Cámaras de fototrampeo ya. Las expediciones llegarán en una actualización.',
-    'hab.pat.h': 'Patagonia', 'hab.pat.p': 'Picos de granito sobre un lago frío. Ya aparece en el carrusel de hábitats, como próximamente.',
-    'enc.h': 'Enciclopedia', 'enc.p': 'Fichas breves con el nombre científico, el estado de conservación y un enlace a la fuente con la que se comprobaron.',
+    'hab.med.h': 'Costa mediterránea',
+    'hab.amz.h': 'Selva amazónica',
+    'hab.pat.h': 'Patagonia',
+    'enc.h': 'Enciclopedia',
     'enc.lc': 'Preocupación menor', 'enc.text': 'Un ave de vivos colores que captura insectos al vuelo desde un posadero. Nidifica en túneles excavados en taludes arenosos y suele pasar el invierno en África.',
-    'stats.today': 'Hoy', 'stats.h': 'Estadísticas', 'stats.p': 'Tiempo de concentración por horas, con etiquetas para estudiar, concentrarte, meditar, trabajar y leer.',
-    'exp.h': 'Expediciones', 'exp.note': 'Únete a una ruta, alcanza su objetivo de tiempo de calma en siete días y graba uno de sus animales especiales.',
-    'exp.garage': 'El garaje mediterráneo', 'exp.bike': 'Moto todoterreno', 'exp.bike.s': 'Ruta de 2 horas, disponible desde el principio', 'exp.free': 'Gratis',
-    'exp.grandad': 'El coche de tu abuelo', 'exp.grandad.s': 'Ruta de 4 horas', 'exp.protector': 'Earth Nomad Protector', 'exp.protector.s': 'Ruta de 6 horas',
-    'exp.coins': 'monedas', 'exp.coin': 'moneda', 'exp.earn': 'Cómo se ganan monedas',
-    'exp.minute': 'Un minuto de calma', 'exp.minute.s': 'en una sesión completada', 'exp.hour': 'Una hora en la costa', 'exp.hour.s': 'con cámara o en expedición',
-    'exp.badges': 'Insignias', 'b.orn': 'Ornitólogo', 'b.orn.s': 'todas las aves de un hábitat', 'b.mam': 'Mastozoólogo', 'b.mam.s': 'todos los mamíferos de un hábitat',
-    'b.herp': 'Herpetólogo', 'b.herp.s': 'todos los reptiles', 'b.exp': 'Explorador del hábitat', 'b.exp.s': 'todas las especies de un hábitat',
-    'b.stamp': 'Sello de expedición', 'b.stamp.s': 'los tres vehículos y todos los animales especiales', 'b.both': 'Ambos hábitats', 'b.amz': 'Amazonia', 'b.med': 'Mediterráneo',
-    'exp.end': 'Nunca se venden monedas.<br>El tiempo de calma es la única moneda.',
+    'stats.today': 'Hoy', 'stats.h': 'Estadísticas',
+    'exp.h': 'Expediciones',
+
+
+
+
     'faq.h': 'Preguntas',
-    'faq.q1': '¿La fauna es real?', 'faq.a1': 'No. Los encuentros son simulados y las animaciones de los animales se crearon de antemano con IA, así que algunos detalles y tamaños pueden no ser exactos. Las especies, sus nombres y los datos de la enciclopedia sí son reales.',
+    'faq.q1': '¿La fauna es real?', 'faq.a1': 'No. Los encuentros son simulados y las animaciones de los animales se crearon de antemano con IA, así que algunos detalles y tamaños pueden no ser exactos. Las especies y sus nombres son reales, y cada ficha de la enciclopedia enlaza a su fuente.',
     'faq.q2': '¿Aparece un animal en cada sesión?', 'faq.a2': 'No. Como en la naturaleza real, algunas sesiones vuelven vacías. Los avistamientos son más probables cuanto más tiempo pasas sin el móvil.',
     'faq.q3': '¿Bloquea mis otras apps?', 'faq.a3': 'No. BirdQuiet nunca bloquea nada y siempre puedes usar el móvil en una emergencia. Usar otras apps solo reduce la probabilidad de un avistamiento.',
     'faq.q4': '¿Cómo sabe que no he tocado el móvil?', 'faq.a4': 'El modo básico cuenta el tiempo en la pantalla de concentración o fuera de BirdQuiet. La concentración total, opcional, usa el acceso a datos de uso de Android, con tu permiso, para saber cuándo estuvo bloqueada la pantalla y qué apps estaban abiertas. Esa información no sale de tu móvil.',
     'faq.q5': '¿Tiene anuncios o compras?', 'faq.a5': 'Por el momento, no hay anuncios, ni cuentas, ni monedas a la venta. Las monedas solo se consiguen con tiempo sin usar el teléfono móvil.',
-    'faq.q6': '¿Necesita conexión a internet?', 'faq.a6': 'No. Las funciones principales funcionan sin conexión. Los enlaces a las fuentes de la enciclopedia se abren en tu navegador.',
-    'faq.q7': '¿Puedo ver el temporizador con la pantalla bloqueada?', 'faq.a7': 'Una notificación opcional muestra el tiempo de la sesión. Que aparezca con la pantalla bloqueada depende de Android y de los ajustes de tu móvil.',
-    'faq.q8': '¿En qué idiomas está?', 'faq.a8': 'En español e inglés. BirdQuiet sigue el idioma de tu móvil y puedes cambiarlo en Ajustes. También tiene temas de color por hábitat y modo nocturno.',
-    'faq.q9': '¿Qué pasa con mis datos?', 'faq.a9': 'Tu cuaderno, tus notas y tus estadísticas se quedan en la app, en tu móvil. No se envía nada ni a nosotros ni a nadie. Tienes los detalles en la <a href="privacidad.html">política de privacidad</a>.',
-    'faq.q10': '¿Es un tratamiento o un control parental?', 'faq.a10': 'Ninguna de las dos cosas. BirdQuiet es una ayuda para concentrarte y una pequeña forma de aprender sobre fauna, pensada para adolescentes y adultos.',
-    'cta.h': 'Consigue BirdQuiet', 'cta.line': 'BirdQuiet llegará pronto a Google Play. Escríbenos y te avisaremos el día que salga.',
-    'cta.button': 'Avísame', 'cta.privacy': 'Leer la política de privacidad',
+    'faq.q6': '¿Necesita conexión a internet?', 'faq.a6': 'No para las funciones principales: las sesiones de concentración y tu cuaderno funcionan sin conexión. Ver un animal en RA es opcional y descarga su modelo 3D, y los enlaces a las fuentes de la enciclopedia se abren en tu navegador.',
+
+
+
     'foot.contact': 'Asistencia y prensa', 'foot.legal': 'Legal', 'foot.privacy': 'Política de privacidad',
-    'foot.line': '© 2026 BirdQuiet Labs, España. Las animaciones de fauna y las ilustraciones son propias de BirdQuiet y en parte generadas con IA.'
+    'foot.line': '© 2026 BirdQuiet Labs, España. Las animaciones de fauna están generadas con IA; las ilustraciones son propias de BirdQuiet y en parte generadas con IA.'
   };
   const EN = {
     'quiz.count': '{n} of {t} identified', 'quiz.right': 'Yes, {a}. It is in your journal now.', 'quiz.wrong': 'Not quite. It was {a}.',

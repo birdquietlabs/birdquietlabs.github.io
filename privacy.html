@@ -72,11 +72,11 @@ footer { margin-top: 72px; padding: 28px 0 56px; color: var(--muted); font-size:
   </div>
   <header>
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated: 26 October 2026. Applies to the BirdQuiet app for Android (version 0.1) and to this website.</p>
+    <p class="meta">Last updated: 14 November 2026. Applies to the BirdQuiet app for Android (version 1.0) and to this website.</p>
   </header>
   <div class="summary">
     <h2>In short</h2>
-    <ul><li>BirdQuiet works offline: the app has no permission to access the internet and sends your data to no one, including us.</li><li>There are no accounts, ads, analytics or purchases.</li><li>Full focus is optional and only switches on if you give your consent. You can withdraw it at any time.</li><li>You can delete all your data from Settings or by uninstalling the app.</li></ul>
+    <ul><li>Focus sessions and your journal work offline. Optional AR downloads use an internet connection to retrieve animal models through Cloudflare. Focus events, your journal and notes are not sent with these requests.</li><li>There are no accounts, ads, analytics or purchases.</li><li>Full focus is optional and only switches on if you give your consent. You can withdraw it at any time.</li><li>You can delete all your data from Settings or by uninstalling the app.</li></ul>
   </div>
   <nav class="toc" aria-label="Contents">
     <p>Contents</p>
@@ -99,27 +99,27 @@ footer { margin-top: 72px; padding: 28px 0 56px; color: var(--muted); font-size:
     <section id="focus">
       <h2>Full focus (optional)</h2>
       <p>Full focus uses Android’s “Usage access” permission. Before asking for it, the app shows a notice explaining which data is used and why. It only switches on if you tap “I agree. Continue” and then grant the permission in Android’s settings.</p>
-      <p>With that permission, during a session BirdQuiet checks, including in the background, when the screen was turned on, locked or unlocked and which apps were in the foreground. It uses this to calculate your focus time and adjust the habitat’s stress and the chance of sightings. Android may provide events from a few minutes before the start so the app knows the initial state, but only the session itself is counted.</p>
+      <p>With that permission, during a session BirdQuiet checks, including in the background, when the screen was turned on, locked or unlocked and which apps were in the foreground. It uses this to calculate your focus time and adjust the habitat’s stress and the chance of sightings. Android may provide events from up to 24 hours before the start so the app knows the initial state, but only the session itself is counted.</p>
       <p>BirdQuiet does not read the content of other apps, your messages or your browsing history. Nor does it keep a list of the apps you opened: it only keeps the result, meaning the session’s quiet time and statistics.</p>
       <p>You can withdraw your consent at any time by choosing basic mode, removing usage access in Android’s settings or resetting BirdQuiet. Withdrawing it does not affect processing carried out before. Basic mode, which does not need this permission, counts the time you spend on the focus screen or away from BirdQuiet.</p>
     </section>
 
     <section id="permissions">
       <h2>Android permissions the app uses</h2>
-      <ul class="plain"><li>Usage access: optional, only for full focus.</li><li>Notifications: optional, to show the timer and tell you when the session ends. What appears on the lock screen depends on your phone’s settings, and anyone who sees it can read it.</li><li>Foreground service: keeps the timer visible during a session you start. You can stop it from the app or from Android.</li><li>Vibration and widget: for alerts and to show the timer on your home screen.</li></ul>
-      <p>BirdQuiet does not use the camera, microphone, location, contacts or your files, and has no permission to connect to the internet. Some Android libraries include technical permissions (such as briefly keeping the phone awake or checking whether a network is available) that give no access to personal data.</p>
+      <ul class="plain"><li>Usage access: optional, only for full focus.</li><li>Notifications: optional, to show the timer and tell you when the session ends. What appears on the lock screen depends on your phone’s settings, and anyone who sees it can read it.</li><li>Foreground service: keeps the timer visible during a session you start. You can stop it from the app or from Android.</li><li>Widget: to show the timer on your home screen.</li></ul>
+      <p>Camera access is optional and is requested only when you choose View in AR. The camera places the animal in your surroundings on your device; BirdQuiet does not record, save or upload camera images. Internet access downloads AR models. You can remove downloaded models in Settings → AR library. BirdQuiet does not access your microphone, location, contacts or unrelated files.</p>
     </section>
 
     <section id="sharing">
       <h2>Who the data is shared with</h2>
-      <p>No one. We do not sell data or share it with advertisers or other companies.</p>
+      <p>We do not sell data or share focus events, journal entries or notes with advertisers or other companies. Optional AR downloads are delivered through Cloudflare, which processes connection data, such as your IP address, to deliver the requested files. Optional Android AR also uses Google Play Services for AR, which collects identifiers, diagnostics and AR usage data under Google’s privacy policy.</p>
       <p>Google Play handles downloading and updating the app and may process its own data (for example, from your Google account, or crash reports if you have enabled them in Android) under its own privacy policy. That processing is Google’s responsibility, not BirdQuiet’s.</p>
       <p>If you email us, your message passes through your email provider and ours (Gmail, by Google). Google may process that data outside the European Economic Area, with the safeguards set out in its terms, such as the European Commission’s standard contractual clauses.</p>
     </section>
 
     <section id="security">
       <h2>Security</h2>
-      <p>Your data is kept in the app’s private storage, which Android does not let other apps access. Because the app cannot connect to the internet, there is no transmission to intercept. BirdQuiet is set up to be excluded from Android’s automatic cloud backups and from device-to-device transfer, although this may vary by manufacturer.</p>
+      <p>Your data is kept in the app’s private storage, which Android does not let other apps access. AR downloads use HTTPS. Focus events, journal entries and notes remain on your device. BirdQuiet is set up to be excluded from Android’s automatic cloud backups and from device-to-device transfer, although this may vary by manufacturer.</p>
       <p>We recommend protecting your phone with a screen lock, because anyone who unlocks it can see your journal and statistics.</p>
     </section>
 
