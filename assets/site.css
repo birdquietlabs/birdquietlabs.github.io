@@ -202,6 +202,16 @@ button { font: inherit; color: inherit; }
 .ui-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #355d43; color: #fffef9; border: 0; border-radius: 12px; padding: 12px 18px; cursor: pointer; font-size: 0.9375rem; }
 .ui-question { font-size: 1rem; font-weight: 500; text-align: center; padding-bottom: 4px; }
 
+/* ---------- AR: the animal in your room ---------- */
+.ar { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); align-items: center; padding: var(--gap-section) var(--margin); background: var(--bg); }
+.ar-figure { grid-column: 2 / span 4; margin: 0; }
+.ar-figure { justify-self: center; }
+.ar-figure img { width: auto; max-width: 100%; max-height: 88svh; border-radius: var(--radius); }
+.ar-text { grid-column: 7 / span 5; display: grid; gap: 24px; max-width: 30ch; }
+.ar-text h2 { font-size: clamp(2.75rem, 1.8rem + 3.2vw, 5rem); line-height: 1; letter-spacing: -0.04em; }
+.ar-lead { font-size: var(--step-lead); line-height: 1.3; letter-spacing: -0.02em; }
+.ar-note { font-size: var(--step-small); color: var(--muted); max-width: 44ch; }
+
 /* ---------- Field journal: the specimen wall ---------- */
 .journal { padding: var(--gap-section) var(--margin); background: var(--bg); }
 .wall { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
@@ -365,6 +375,11 @@ button { font: inherit; color: inherit; }
   .ui-focus img { width: 34%; }
   .ui-clock { font-size: 4.25rem; }
 
+  .ar { display: flex; flex-direction: column; gap: 32px; padding: 88px 20px; }
+  .ar-text { order: -1; }
+  .ar-figure { margin: 0 auto; max-width: 420px; width: 100%; }
+  .ar-figure img { max-height: none; }
+  .ar-text { max-width: none; gap: 16px; }
   .journal { padding: 88px 16px; }
   .tile-cap { font-size: 0.8125rem; bottom: 12px; }
 

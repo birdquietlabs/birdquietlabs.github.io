@@ -8,7 +8,7 @@
   /* ---------------- Language ---------------- */
   const ES = {
     'skip': 'Saltar a cómo funciona',
-    'nav.menu': 'Menú', 'nav.how': 'Cómo funciona', 'nav.journal': 'Cuaderno', 'nav.habitats': 'Hábitats', 'nav.expeditions': 'Expediciones', 'nav.questions': 'Preguntas',
+    'nav.menu': 'Menú', 'nav.how': 'Cómo funciona', 'nav.ar': 'RA', 'nav.journal': 'Cuaderno', 'nav.habitats': 'Hábitats', 'nav.expeditions': 'Expediciones', 'nav.questions': 'Preguntas',
     'hero.line': 'Una app para reducir el uso del móvil y aprender sobre la naturaleza.',
     'ui.coast': 'Costa mediterránea', 'ui.cam': 'Cámara 01', 'ui.settime': 'Selecciona el tiempo', 'ui.hours': 'Horas', 'ui.minutes': 'Minutos',
     'ui.setbtn': 'Colocar cámara', 'ui.recording': 'Tu cámara de fototrampeo está grabando',
@@ -29,6 +29,10 @@
     'quiz.count': '{n} de {t} identificados',
     'quiz.right': 'Correcto: {a}. Ya está en tu cuaderno.', 'quiz.wrong': 'Casi. La respuesta era {a}.',
     'quiz.done': 'Has revisado todas las grabaciones. En la app hay {n} animales que encontrar.',
+    'ar.h': 'Míralo en RA',
+    'ar.lead': 'Cuando hayas identificado un animal, ábrelo en realidad aumentada y colócalo en tu mesa, tu escritorio o el suelo.',
+    'ar.note': 'Opcional. Necesita un móvil compatible con los Servicios de Google Play para RA y descarga el modelo 3D del animal. Los tamaños son aproximados.',
+    'alt.ar': 'Watch animals in your room. AR! Un abejaruco europeo en realidad aumentada, posado en una rama sobre una mesa junto a una taza.',
     'journal.h': 'especies, y cada vez más', 'journal.med': 'en la costa mediterránea', 'journal.amz': 'en la selva amazónica',
     'sp.fox': 'Zorro rojo', 'sp.genet': 'Gineta', 'sp.lynx': 'Lince ibérico', 'sp.wildcat': 'Gato montés europeo', 'sp.jay': 'Arrendajo euroasiático',
     'sp.beeeater': 'Abejaruco europeo', 'sp.hoopoe': 'Abubilla común', 'sp.marten': 'Garduña', 'sp.mongoose': 'Meloncillo', 'sp.badger': 'Tejón europeo',
@@ -228,9 +232,8 @@
   /* ---------------- Entrances: heading, then text, then picture ---------------- */
   const groups = [
     ['.how h2'], ['.quiz h2', '.quiz-lead', '.quiz-options', '.quiz-foot'],
-    ['.habitats h2', ...$$('.hab-card')], ...$$('.inapp-half').map((x) => [x.querySelector('h2'), x.querySelector('.inapp-panel')]),
-    ['.expeditions h2', '.road'], ['.faq h2'],
-    ['.footer-mark', ...$$('.footer-menu li'), '.footer-blocks']
+    ['.ar-figure', '.ar h2', '.ar-lead', '.ar-note'], ['.habitats h2', ...$$('.hab-card')], ...$$('.inapp-half').map((x) => [x.querySelector('h2'), x.querySelector('.inapp-panel')]),
+    ['.expeditions h2', '.road'], ['.faq h2']
   ];
   groups.forEach((g) => g.map((x) => (typeof x === 'string' ? $(x) : x)).filter(Boolean).forEach((el, i) => {
     el.setAttribute('data-reveal', ''); el.style.setProperty('--d', Math.min(i, 8) * 75 + 'ms');
